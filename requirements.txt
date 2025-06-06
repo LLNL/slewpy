@@ -6,3 +6,6 @@ scipy
 numpy
 pandas
 llnl_ssapy
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-bibtex
