@@ -1,28 +1,29 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+import os
+import sys
 
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'slewpy'
-copyright = '2025, LLNL'
-author = 'LLNL'
-release = '0.1.0'
+project = "slewpy"
+copyright = "2025, Lawrence Livermore National Laboratory | LLNL-SM-XXXX"
+author = "Lawrence Livermore National Laboratory"
+release = "0.1.0"
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+extensions = [
+    "sphinx_rtd_theme",
+    "sphinx.ext.mathjax",
+    "sphinxcontrib.bibtex",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.viewcode",
+    "nbsphinx",
+]
 
-extensions = []
+bibtex_bibfiles = ["refs.bib"]
+bibtex_reference_style = "author_year"
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 exclude_patterns = []
 
-language = 'y'
+html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
 
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_theme = 'alabaster'
-html_static_path = ['_static']
+nbsphinx_allow_errors = True
