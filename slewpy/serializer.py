@@ -1,7 +1,5 @@
 import csv
 
-
-
 def targets_from_csv(path):
     """
     Read in targets from csv file and into Target objects.
@@ -23,9 +21,7 @@ def targets_from_csv(path):
             raise ValueError(f"Expected column names
              {expected_column_names} got {reader.fieldnames}")
 
-
-
-    return 0.0
+    return targets
 
 
 
