@@ -21,6 +21,7 @@ def targets_from_csv(path):
             raise ValueError(f"Expected column names
              {expected_column_names} got {reader.fieldnames}")
 
+
     return targets
 
 
