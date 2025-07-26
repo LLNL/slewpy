@@ -11,10 +11,10 @@ targets or sensor positions. The scheduler then selects for observation the high
 visible viewing geometry.
 
 The priority function can return a value on an arbitrary scale. However, we have found that a rational way to
-assign priority is according to a target's *ideal time to its next observation*. For example, if a target ought
-to be observed with a cadence :math:`T` (say :math:`T = 6~\mathrm{hr}`) and it was last observed at time
+assign priority is according to a target's *ideal time to its next observation*. For example, if a target's
+desired cadence is :math:`T` (say :math:`T = 6~\mathrm{hr}`) and it was last observed at time
 :math:`t_\mathrm{last}`, its ideal time of next observation would be :math:`t = t_\mathrm{last} + T` and 
-its priority should be,
+its priority should be
 
 .. math::
 
