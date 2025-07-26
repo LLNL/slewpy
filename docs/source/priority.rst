@@ -1,5 +1,5 @@
 =================
-Priorty Functions
+Priority Functions
 =================
 
 Optimal scheduling of observations is a complex planning problem that requires a
