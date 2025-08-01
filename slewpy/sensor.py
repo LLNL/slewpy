@@ -101,6 +101,8 @@ class Sensor(ABC):
 
     def calculate_dead_times(self):
 
+        """Set dead time for sensor in simulation"""
+
         self.dead_times = []
 
         if self.dead_fraction_per_day:
@@ -223,6 +225,24 @@ class Sensor(ABC):
     def getFixedPointing(
         self, target, ra, dec, t0, exptime, r, v, slew_time
     ):
+
+    """Adds target for simulated observation.
+
+    Args:
+      target: target from hub
+      ra: right ascension of target
+      dec: declination of target 
+      t0: current time
+      exptime: exposure time in seconds
+      r: observer position vector
+      v: observer velocity vector
+      slew_time: time delay for slew time 
+
+    Returns:
+      None, updated target 
+
+    """
+
         target.add_data(
             t0,
             self.name,
@@ -314,6 +334,17 @@ class SpaceSensor(Sensor):
         self.max_cache_size = 1000
 
     def rv(self, time):
+
+        """Gets position and velocity of observer at a given time.
+
+        Args:
+          time: gps seconds  
+
+        Returns:
+          r, observer position vector
+          v, observer velocity vector
+
+        """
         r = []
         v = []
         if iterable(time) is False:
@@ -338,6 +369,17 @@ class SpaceSensor(Sensor):
         return r, v
 
     def is_visible(self, target, time):
+        """Checks if target is visible from observer position given earth, moon, and solar 
+           observing constraints.
+
+        Args:
+          target: target orbit object
+          time: gps seconds  
+
+        Returns:
+          visible bool
+
+        """
         r_target, _ = target.rv(time)
         r, _ = self.rv(time)
 
