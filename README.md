@@ -1,6 +1,6 @@
 # Slewpy
 
-
+![image info](./docs/source/slewpy_sim.gif)
 
 ## License
 
