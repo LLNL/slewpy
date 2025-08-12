@@ -1,6 +1,10 @@
-# Slewpy
+# slewpy
 
 slewpy is a Python package that allows the simulation of the science operations of an astrophysics space satellite mission. slewpy allows users to specify an astronomical target list with observing priorities and a satellite configuration (i.e., orbit and various satellite parameters). Taking these inputs, slewpy can be used to run a time-resolved simulation of an astrophysics mission and outputs simulated target observations given constraints such as satellite slewing rates between targets, observing time on a given target, and Sun-, Earth-, and Moon-limb observing constraints. slewpy provides the tools to test astrophysics space satellite mission designs against observing requirements for a given science case.
+
+For more details on the project including the installation, contributing, and the getting started guide see the documentation.
+
+image info
 
 ![image info](./docs/source/slewpy_sim.gif)
 
