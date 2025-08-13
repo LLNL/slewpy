@@ -1,6 +1,10 @@
-=================
+==========
+Background
+==========
+
+
 Priority Functions
-=================
+------------------
 
 Optimal scheduling of observations is a complex planning problem that requires a
 joint analysis of all targets and the future time series of sensor positions.
