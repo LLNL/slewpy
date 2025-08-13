@@ -3,7 +3,7 @@ import sys
 
 
 project = "slewpy"
-copyright = "2025, Lawrence Livermore National Laboratory | LLNL-SM-XXXX"
+copyright = "2025, Lawrence Livermore National Laboratory | LLNL-CODE-2009734"
 author = "Lawrence Livermore National Laboratory"
 release = "0.1.0"
 
