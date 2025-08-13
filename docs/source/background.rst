@@ -3,6 +3,14 @@ Background
 ==========
 
 
+Descrete Event Simulation
+-------------------------
+
+slewpy is built on top of a discrete event simulation (DES) framework implemented in `Simpy <https://simpy.readthedocs.io/en/latest/contents.html>`_ . In DES, the system state changes only at discrete points in time, triggered by events. In slewpy, examples of events are: a transient appearing in the night sky, a satellite observing a transient, or a satellite becoming available after observing a target. In DES, processes are sequences of events or actions that entities in the system perform over time. The simulation environment manages the simulation clock and event scheduling. It coordinates the execution of all processes and advances time to the next scheduled event. Resources represent limited, shared entities such as satellites. Processes request and release resources, and may have to wait if the resource is unavailable.
+
+One of the key advantages of using DES is that it only simulates changes at event times, skipping periods where nothing happens. This makes it much more efficient than time-step simulations for many systems. DES allows the study of system bottlenecks, resource utilization, and the impact of different system policies or configurations.
+
+
 Priority Functions
 ------------------
 
