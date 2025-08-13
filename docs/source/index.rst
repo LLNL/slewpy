@@ -15,6 +15,8 @@ developed on `GitHub <https://github.com/LLNL/slewpy>`_.
 
 .. figure:: slewpy_sim.gif
 
+   Example visualization of a slewpy satellite simulation. The figure shows astrophysical transients appearing and disappearing on the celestial sphere (colored circles). Every        time an unfilled circle appears around a transient, it indicates that the transient was observed by a satellite in a 600 km altitude sun-synchronous polar orbit. Shaded regions     show various observing constraints: Moon, Sun, and Earth-limb constraints, as well as the high source density region of the Galactic plane. Transients are not observed when they    are in one of the constrained regions.
+
 A good place to get started is with the installation guide, getting started page and
 the the tutorial examples.
 
