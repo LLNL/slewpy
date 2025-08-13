@@ -9,13 +9,26 @@ such as satellite slewing rates between targets, observing time on a given targe
 and Moon-limb observing constraints. slewpy provides the tools to test astrophysics space satellite mission 
 designs against observing requirements for a given science case.
 
+
+slewpy is being actively
+developed on `GitHub <https://github.com/LLNL/slewpy>`_.
+
+.. figure:: ../slewpy_sim.gif
+
 A good place to get started is with the installation guide, getting started page and
 the the tutorial examples.
 
-If you are here to develop on slewpy, please head over to the contributing guide.
 
-If you have issues with the software or need support please open a `github issue <https://github.com/LLNL/slewpy/issues>`_.
+.. note:: Finding your way around
 
+   A good place to get started is with the installation guide, getting started page and
+   the the tutorial examples.
+
+   If you are here to develop on popclass, please head over to the contributing guide.
+
+   If you have issues with the software or need support please open a `github issue <https://github.com/LLNL/slewpy/issues>`_.
+
+   If you are here to develop on slewpy, please head over to the contributing guide.
 
 Contents
 --------
