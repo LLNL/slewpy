@@ -13,7 +13,7 @@ designs against observing requirements for a given science case.
 slewpy is being actively
 developed on `GitHub <https://github.com/LLNL/slewpy>`_.
 
-.. figure:: ../slewpy_sim.gif
+.. figure:: slewpy_sim.gif
 
 A good place to get started is with the installation guide, getting started page and
 the the tutorial examples.
